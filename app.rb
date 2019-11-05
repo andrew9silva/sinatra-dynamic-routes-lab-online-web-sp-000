@@ -18,8 +18,7 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
     array = []
-    array << @phrase
-    @number.times
+    @number.times {|x| array << @phrase}
   end
     
 
