@@ -19,7 +19,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     array = []
     array << @phrase
-    
+    @number.times array
   end
     
 
