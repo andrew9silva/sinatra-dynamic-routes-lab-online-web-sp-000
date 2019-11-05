@@ -19,6 +19,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     array = []
     @number.times {|x| array << @phrase}
+    array.join(" ")
   end
     
 
